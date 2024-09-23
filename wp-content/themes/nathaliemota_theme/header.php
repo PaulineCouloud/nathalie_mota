@@ -10,7 +10,7 @@
 <body <?php body_class(); ?>>
 <header class="site-header">
     <a href="/">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/logo.svg" alt="Nathalie Mota"/>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/svg/logo.svg" alt="Nathalie Mota" class="logo"/>
     </a>
     <nav class="site-nav">
         <?php
@@ -21,4 +21,8 @@
         ));
         ?>
     </nav>
+    <div class="menu-toggle">
+        <div class="hamburger"></div>
+        <div class="croix"></div>
+    </div>
 </header>
