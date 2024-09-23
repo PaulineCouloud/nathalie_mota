@@ -10,3 +10,104 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: nathalie_mota
 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+*/
+
+/*Menu Header*/
+
+header.site-header {
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 146px;
+    box-sizing: border-box;
+    height: 80px;
+}
+
+#menu-principal a{
+    color: #000;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#menu-principal li{
+    list-style: none;
+}
+
+#menu-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0;
+    margin: 0;
+    gap: 45px;
+}
+
+/*Menu footer*/
+
+#menu-footer a,#menu-footer span{
+    color: #000;
+    font-family: "Space Mono", monospace;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#menu-footer li{
+    list-style: none;
+}
+
+#menu-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin: 0;
+    gap: 86px;
+}
+
+footer.site-footer{
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height:40px;
+    border-top:1px solid #000;
+}
