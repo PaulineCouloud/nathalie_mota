@@ -12,6 +12,7 @@ Text Domain: nathalie_mota
 */
 @import "assets/css/reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*
 .space-mono-regular {
@@ -37,6 +38,114 @@ Text Domain: nathalie_mota
   font-weight: 700;
   font-style: italic;
 }
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
 */
 
 /*Menu Header*/
@@ -52,7 +161,7 @@ header.site-header {
     height: 80px;
 }
 
-#menu-principal a {
+#menu-principal a, #menu-principal span {
     color: #000;
     font-family: "Space Mono", monospace;
     font-weight: 400;
@@ -60,6 +169,7 @@ header.site-header {
     font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
+    cursor: pointer;
 }
 
 #menu-principal li {
@@ -115,7 +225,103 @@ footer.site-footer {
     display: none;
 }
 
+/*Modal contact*/
 
+.modal_contact_background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal_contact_background.active {
+    display: flex;
+}
+
+.modal_contact {
+    width: 597px;
+    height: 769px;
+    border: 5px solid #000;
+    background-color: #FFF;
+}
+
+
+
+.header_contact {
+    background-image: url(/wp-content/themes/nathaliemota_theme/assets/svg/contact_header.svg);
+    height: 106px;
+    margin-top: 18px;
+}
+
+#fluentform_3 .ff-el-input--label{
+    color: #313144;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#fluentform_3 .ff-el-form-control{
+    border-radius: 8px;
+    border: 1px solid #B8BBC2;
+    background: #FFF;
+    width: 263px;
+    height: 40px;
+    flex-shrink: 0;
+    padding: 0 5px;
+}
+
+#fluentform_3 .ff-btn-submit{
+    display: flex;
+    width: 263px;
+    height: 50px;
+    padding: 8px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: #D8D8D8;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.02);
+    color: #000;
+    font-family: "Space Mono", monospace;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+#fluentform_3 textarea.ff-el-form-control{
+    width: 263px;
+    height: 210px;
+}
+
+.form_contact {
+    height: 663px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#fluentform_3 fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#fluentform_3 .ff-el-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 
 @media screen and (max-width: 1024px) {
 
@@ -140,6 +346,7 @@ footer.site-footer {
         height: 18px;
         background-size: 22px 18px;
     }
+
     header.site-header {
         padding: 0 40px;
         height: 71px;
@@ -174,7 +381,7 @@ footer.site-footer {
         margin-top: 71px;
     }
 
-    #menu-principal li a{
+    #menu-principal li a {
         color: #FFF;
         text-align: center;
         font-family: "Space Mono", monospace;
@@ -192,7 +399,7 @@ footer.site-footer {
         gap: 18px;
     }
 
-    .logo{
+    .logo {
         width: 138px;
     }
 
@@ -203,18 +410,21 @@ footer.site-footer {
     nav.site-nav.active {
         display: flex;
     }
-    .hamburger.inactive{
+
+    .hamburger.inactive {
         display: none;
     }
-    .croix.active{
+
+    .croix.active {
         display: flex;
     }
 
     footer.site-footer {
         height: 208px;
     }
-    #menu-footer{
-        gap:24px;
+
+    #menu-footer {
+        gap: 24px;
         flex-direction: column;
     }
 

@@ -12,6 +12,10 @@ function add_static_item_to_footer_menu($items, $args) {
         // Ajouter un élément li statique à la fin du menu
         $items .= '<li class="menu-item menu-item-static"><span>Tous droits réservés</span></li>';
     }
+    if ($args->menu == 'Principal') {
+        // Ajouter un élément li statique à la fin du menu
+        $items .= '<li class="menu-item menu-item-static menu_contact"><span>Contact</span></li>';
+    }
     return $items;
 }
 add_filter('wp_nav_menu_items', 'add_static_item_to_footer_menu', 10, 2);
