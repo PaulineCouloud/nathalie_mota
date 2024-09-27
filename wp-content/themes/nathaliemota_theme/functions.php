@@ -74,4 +74,18 @@ function get_prev_photo($post_id){
             }
         }
     }
+    return false;
 }
+
+function get_random_photo(){
+    $args = array(
+        'post_type' => 'photo',
+        'posts_per_page' => -1,
+        'orderby' => 'rand',
+        'post_status' => 'publish'
+    );
+    $posts= get_posts($args);
+    return get_the_post_thumbnail_url($posts[0]->ID);
+}
+
+

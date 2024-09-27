@@ -606,6 +606,33 @@ span.lb-caption {
     background-image: url(/wp-content/themes/nathaliemota_theme/assets/svg/precedent_on.svg) !important;
 }
 
+/*Home*/
+
+div#home {
+    max-width: 1447px;
+    margin: auto;
+    width: 100%;
+}
+
+header.hero {
+    height: 962px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    /* texte */
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FFF;
+    font-family: "Space Mono", monospace;
+    font-size: 96px;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: transparent;
+}
 
 @media screen and (max-width: 1148px) {
 
