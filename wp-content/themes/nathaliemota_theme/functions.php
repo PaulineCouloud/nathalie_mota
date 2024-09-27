@@ -19,3 +19,14 @@ function add_static_item_to_footer_menu($items, $args) {
     return $items;
 }
 add_filter('wp_nav_menu_items', 'add_static_item_to_footer_menu', 10, 2);
+
+
+function custom_post_type_support() {
+    // Assure que les images mises en avant sont activées pour tous les types de post
+    add_theme_support('post-thumbnails');
+
+    // Ajoute le support pour les images mises en avant pour le type de post 'photo'
+    add_post_type_support('photo', 'thumbnail');
+}
+
+add_action('after_setup_theme', 'custom_post_type_support');
