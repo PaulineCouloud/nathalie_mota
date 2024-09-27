@@ -3,6 +3,10 @@
 function add_theme_scripts() {
     wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.1', 'all');
     wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/js/script.js', array(), '1.0', false );
+
+    //embed lightbox
+    wp_enqueue_style( 'lightbox', get_template_directory_uri() . '/lib/lightbox/css/lightbox.min.css', array(), '1.1', 'all');
+    wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/lib/lightbox/js/lightbox.min.js', array("jquery"), '1.0', false );
 }
 
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );

@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     contact_form();
 });
 
-
 /**
  * Fonction pour afficher le menu hamburger
  */
@@ -61,5 +60,13 @@ function contact_form(){
             modal.classList.toggle('active');
         }
     });
+}
+
+
+function showImage(url){
+    //get image .photo_navigation_suivante
+    var img = document.querySelector('.photo_navigation_suivante');
+    //set image url
+    img.src = url;
 }
 

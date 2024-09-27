@@ -32,15 +32,15 @@
                         $prev_photo = get_prev_photo(get_the_ID());
                         ?>
 
-                        <img src="<?php echo get_the_post_thumbnail_url($next_photo->ID); ?>"
+                        <img src="<?php echo get_the_post_thumbnail_url(); ?>"
                              alt="<?php echo $next_photo->post_title; ?>"
                              class="photo_navigation_suivante"
-                             onclick="document.location.href='<?php echo get_permalink($next_photo->ID); ?>'">
+                             >
 
 
                         <div class="photo_fleche">
-                            <a class="photo_fleche_gauche" href="<?php echo get_permalink($prev_photo->ID); ?>"></a>
-                            <a class="photo_fleche_droite" href="<?php echo get_permalink($next_photo->ID); ?>"></a>
+                            <a class="photo_fleche_gauche" href="<?php echo get_permalink($prev_photo->ID); ?>" onmouseover="showImage('<?php echo get_the_post_thumbnail_url($prev_photo->ID); ?>');" onmouseleave="showImage('<?php echo get_the_post_thumbnail_url(); ?>');"></a>
+                            <a class="photo_fleche_droite" href="<?php echo get_permalink($next_photo->ID); ?>" onmouseover="showImage('<?php echo get_the_post_thumbnail_url($next_photo->ID); ?>');" onmouseleave="showImage('<?php echo get_the_post_thumbnail_url(); ?>');"></a>
                         </div>
                     </div>
                 </div>
