@@ -34,6 +34,8 @@ function hamburger_menu(){
 function contact_form(){
     //on récupère le bouton contact
     var btn = document.querySelector('.menu_contact');
+    //on récupère le bouton contact de la page photo
+    var btn_photo = document.querySelector('.btn_contact_photo');
     //on récupère la modale contact
     var modal = document.querySelector('.modal_contact_background');
     //on recupere le background de la modale
@@ -43,6 +45,16 @@ function contact_form(){
         //on ajoute ou on enlève la classe active sur la modale
         modal.classList.toggle('active');
     });
+    if(btn_photo != null) {
+        btn_photo.addEventListener('click', function () {
+            //on récupére la reference de la photo
+            var photo_ref = this.getAttribute('data-photo');
+            //on ajoute au formulaire la reference #ff_3_input_text
+            document.getElementById('ff_3_input_text').value = photo_ref;
+            //on ajoute ou on enlève la classe active sur la modale
+            modal.classList.toggle('active');
+        });
+    }
     //quand on clique sur le background et pas sur la fenetre interne .modal_contact on ferme la modale
     background.addEventListener('click', function(event) {
         if (event.target === background) {

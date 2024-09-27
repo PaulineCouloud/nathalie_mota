@@ -437,6 +437,7 @@ img.photo_navigation_suivante {
     height: 71px;
     object-fit: cover;
     object-position: center;
+    cursor: pointer;
 }
 
 .photo_fleche_gauche{

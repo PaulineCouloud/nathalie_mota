@@ -30,3 +30,44 @@ function custom_post_type_support() {
 }
 
 add_action('after_setup_theme', 'custom_post_type_support');
+
+
+function get_next_photo($post_id){
+    $args = array(
+        'post_type' => 'photo',
+        'posts_per_page' => -1,
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'post_status' => 'publish'
+    );
+    $posts= get_posts($args);
+    foreach($posts as $key => $post){
+        if($post->ID == $post_id){
+            if(isset($posts[$key+1])){
+                return $posts[$key+1];
+            }else{
+                return $posts[0];
+            }
+        }
+    }
+}
+
+function get_prev_photo($post_id){
+    $args = array(
+        'post_type' => 'photo',
+        'posts_per_page' => -1,
+        'orderby' => 'date',
+        'order' => 'DESC',
+        'post_status' => 'publish'
+    );
+    $posts= get_posts($args);
+    foreach($posts as $key => $post){
+        if($post->ID == $post_id){
+            if(isset($posts[$key-1])){
+                return $posts[$key-1];
+            }else{
+                return $posts[count($posts)-1];
+            }
+        }
+    }
+}
