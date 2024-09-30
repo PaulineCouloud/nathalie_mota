@@ -634,6 +634,28 @@ header.hero {
     color: transparent;
 }
 
+/* Galerie page d'accueil */
+
+#photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes de taille égale */
+    gap: 10px;
+    max-width: 1148px; /* Limite la largeur maximale de la grille */
+    width: 100%; /* Assure que la grille prend toute la largeur possible */
+    margin: 0 auto; /* Centre horizontalement la grille sur la page */
+    align-items: center; /* Centre verticalement le contenu dans les cellules */
+    justify-items: center; /* Centre horizontalement le contenu dans les cellules */
+  }
+
+  #charger_plus {
+    display: block; /* Assure que le bouton se comporte comme un bloc */
+    margin: 40px auto 0 auto; /* Ajoute un gap de 40px au-dessus du bouton et centre-le horizontalement */
+  }
+  
+  /*Select page d'accueil */
+
+  
+
 @media screen and (max-width: 1148px) {
 
 
@@ -793,5 +815,17 @@ header.hero {
         top: -40px;
     }
 
-
+/* Galerie page d'accueil */
+    #photos {
+      grid-template-columns: 1fr; /* 1 colonne sur les petits écrans */
+      width: 320px; /* Fixe la largeur de la galerie à 320 pixels */
+      margin: 0 auto; /* Centre la galerie horizontalement */
+    }
+  
+    .photo_block {
+        height: 280px;
+        width: 317px;
 }
+}
+
+
