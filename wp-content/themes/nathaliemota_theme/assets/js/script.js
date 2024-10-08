@@ -70,3 +70,8 @@ function showImage(url){
     img.src = url;
 }
 
+jQuery(document).ready(function($) {
+    $("#category").select2();
+    $("#formats").select2();
+    $("#sort").select2();
+});

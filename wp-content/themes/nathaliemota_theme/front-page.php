@@ -40,7 +40,8 @@
     <div class="filters-right">
         <select id="sort">
             <option value="">Trier par</option>
-            <!-- Options de tri -->
+            <option value="DESC">Plus récentes</option>
+            <option value="ASC">Plus anciennes</option>
         </select>
     </div>
 </div>
@@ -59,11 +60,15 @@
                         $query->the_post();
                         get_template_part('templates_part/photo');
                     }
+                    wp_reset_postdata();
+
+                    // Vérifie s'il y a plus de pages
+                    $has_more = $query->max_num_pages > 1;
                     ?>
                 </div>
             </main>
             <footer>
-                <button class="btn_nm" id="charger_plus">Charger plus</button>
+                <button class="btn_nm" id="charger_plus" <?php if (!$has_more) echo 'style="display:none;"'; ?>>Charger plus</button>
             </footer>
         </section>
 
