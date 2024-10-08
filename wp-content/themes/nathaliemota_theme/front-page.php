@@ -7,19 +7,44 @@
         </header>
         <section>
             <header>
-                <div>
-                    <select id="categorie">
-                        <option>Catégories</option>
-                    </select>
-                    <select id="format">
-                        <option>Formats</option>
-                    </select>
-                </div>
-                <div>
-                    <select id="tri">
-                        <option>Trier par</option>
-                    </select>
-                </div>
+            <div class="filters-container">
+            <div class="filters-left">
+        <select id="category">
+            <option value="">Catégories</option>
+            <?php
+            $categories = get_terms( array(
+                'taxonomy' => 'categorie', // Utilisation de ta clé de taxonomie
+                'hide_empty' => false, // Afficher même les catégories sans contenu
+            ) );
+
+            if ( ! empty( $categories ) && ! is_wp_error( $categories ) ) {
+                foreach ( $categories as $category ) {
+                    echo '<option value="' . esc_attr( $category->slug ) . '">' . esc_html( $category->name ) . '</option>';
+                }
+            }
+            ?>
+        </select>
+        <select id="formats">
+            <option value="">Formats</option>
+            <?php
+                $formats = get_terms(array(
+                    'taxonomy' => 'format',
+                    'hide_empty' => false,
+                ));
+                foreach ($formats as $format) {
+                    echo '<option value="' . $format->term_id . '">' . $format->name . '</option>';
+                }
+            ?>
+        </select>
+    </div>
+    <div class="filters-right">
+        <select id="sort">
+            <option value="">Trier par</option>
+            <!-- Options de tri -->
+        </select>
+    </div>
+</div>
+
             </header>
             <main>
                 <div id="photos">

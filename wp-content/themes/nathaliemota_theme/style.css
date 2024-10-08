@@ -654,7 +654,37 @@ header.hero {
   
   /*Select page d'accueil */
 
-  
+  .filters-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1148px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.filters-left {
+    display: flex;
+    gap: 40px; /* Espace entre les selects à gauche */
+}
+
+.filters-right {
+    display: flex;
+}
+
+select {
+    background-image:url(/wp-content/themes/nathaliemota_theme/assets/svg/select-fleche.svg) ;
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Place l'image à droite */
+    padding: 11px 18px;
+    border: 1px solid #B8BBC2;
+    border-radius: 8px;
+    appearance: none;
+    background-color: white;
+    cursor: pointer;
+    width: 260px;
+}
+
 
 @media screen and (max-width: 1148px) {
 
