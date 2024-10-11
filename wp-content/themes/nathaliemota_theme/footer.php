@@ -11,8 +11,8 @@
     </nav>
 </footer><!-- #colophon -->
 <?php
-wp_footer();
 get_template_part('templates_part/contact');
+wp_footer();
 ?>
 </body>
 </html>

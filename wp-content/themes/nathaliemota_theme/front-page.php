@@ -7,44 +7,44 @@
         </header>
         <section>
             <header>
-            <div class="filters-container">
-            <div class="filters-left">
-        <select id="category">
-            <option value="">Catégories</option>
-            <?php
-            $categories = get_terms( array(
-                'taxonomy' => 'categorie', // Utilisation de ta clé de taxonomie
-                'hide_empty' => false, // Afficher même les catégories sans contenu
-            ) );
+                <div class="filters-container">
+                    <div class="filters-left">
+                        <select id="category">
+                            <option value="">Catégories</option>
+                            <?php
+                            $categories = get_terms(array(
+                                'taxonomy' => 'categorie', // Utilisation de ta clé de taxonomie
+                                'hide_empty' => false, // Afficher même les catégories sans contenu
+                            ));
 
-            if ( ! empty( $categories ) && ! is_wp_error( $categories ) ) {
-                foreach ( $categories as $category ) {
-                    echo '<option value="' . esc_attr( $category->slug ) . '">' . esc_html( $category->name ) . '</option>';
-                }
-            }
-            ?>
-        </select>
-        <select id="formats">
-            <option value="">Formats</option>
-            <?php
-                $formats = get_terms(array(
-                    'taxonomy' => 'format',
-                    'hide_empty' => false,
-                ));
-                foreach ($formats as $format) {
-                    echo '<option value="' . $format->term_id . '">' . $format->name . '</option>';
-                }
-            ?>
-        </select>
-    </div>
-    <div class="filters-right">
-        <select id="sort">
-            <option value="">Trier par</option>
-            <option value="DESC">Plus récentes</option>
-            <option value="ASC">Plus anciennes</option>
-        </select>
-    </div>
-</div>
+                            if (!empty($categories) && !is_wp_error($categories)) {
+                                foreach ($categories as $category) {
+                                    echo '<option value="' . esc_attr($category->slug) . '">' . esc_html($category->name) . '</option>';
+                                }
+                            }
+                            ?>
+                        </select>
+                        <select id="formats">
+                            <option value="">Formats</option>
+                            <?php
+                            $formats = get_terms(array(
+                                'taxonomy' => 'format',
+                                'hide_empty' => false,
+                            ));
+                            foreach ($formats as $format) {
+                                echo '<option value="' . $format->term_id . '">' . $format->name . '</option>';
+                            }
+                            ?>
+                        </select>
+                    </div>
+                    <div class="filters-right">
+                        <select id="sort">
+                            <option value="">Trier par</option>
+                            <option value="DESC">Plus récentes</option>
+                            <option value="ASC">Plus anciennes</option>
+                        </select>
+                    </div>
+                </div>
 
             </header>
             <main>
@@ -68,7 +68,9 @@
                 </div>
             </main>
             <footer>
-                <button class="btn_nm" id="charger_plus" <?php if (!$has_more) echo 'style="display:none;"'; ?>>Charger plus</button>
+                <button class="btn_nm" id="charger_plus" <?php if (!$has_more) echo 'style="display:none;"'; ?>>Charger
+                    plus
+                </button>
             </footer>
         </section>
 
