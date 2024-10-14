@@ -173,7 +173,7 @@ header.site-header {
     cursor: pointer;
 }
 
-#menu-principal a:hover, #menu-principal span:hover{
+#menu-principal a:hover, #menu-principal span:hover {
     font-weight: bold;
 }
 
@@ -258,14 +258,13 @@ footer.site-footer {
 }
 
 
-
 .header_contact {
     background-image: url(/wp-content/themes/nathaliemota_theme/assets/svg/contact_header.svg);
     height: 106px;
     margin-top: 18px;
 }
 
-#fluentform_3 .ff-el-input--label{
+#fluentform_3 .ff-el-input--label {
     color: #313144;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -274,7 +273,7 @@ footer.site-footer {
     text-transform: uppercase;
 }
 
-#fluentform_3 .ff-el-form-control{
+#fluentform_3 .ff-el-form-control {
     border-radius: 8px;
     border: 1px solid #B8BBC2;
     background: #FFF;
@@ -284,7 +283,7 @@ footer.site-footer {
     padding: 0 5px;
 }
 
-#fluentform_3 .ff-btn-submit{
+#fluentform_3 .ff-btn-submit {
     display: flex;
     width: 263px;
     height: 50px;
@@ -305,7 +304,7 @@ footer.site-footer {
     cursor: pointer;
 }
 
-#fluentform_3 textarea.ff-el-form-control{
+#fluentform_3 textarea.ff-el-form-control {
     width: 263px;
     height: 210px;
 }
@@ -331,7 +330,7 @@ footer.site-footer {
 
 /*General*/
 
-.btn_nm{
+.btn_nm {
     display: flex;
     min-width: 272px;
     height: 50px;
@@ -346,7 +345,7 @@ footer.site-footer {
     cursor: pointer;
 }
 
-.btn_nm:hover{
+.btn_nm:hover {
     background-color: #000;
     color: #FFF;
     font-weight: bold;
@@ -379,7 +378,7 @@ div#primary {
     height: calc(100vh - 230px);
 }
 
-.photo_titre{
+.photo_titre {
     color: #000;
     font-family: "Space Mono", monospace;
     font-size: 66px;
@@ -389,7 +388,7 @@ div#primary {
     max-width: 420px;
 }
 
-.photo_meta{
+.photo_meta {
     color: #000;
     font-family: "Space Mono", monospace;
     font-size: 14px;
@@ -430,6 +429,7 @@ ul.photo_meta {
     height: 100%;
     object-fit: cover;
 }
+
 .photo_sidebar {
     height: 118px;
     display: flex;
@@ -439,7 +439,7 @@ ul.photo_meta {
     align-items: center;
 }
 
-.photo_contact_btn_texte{
+.photo_contact_btn_texte {
     color: #000;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
@@ -451,6 +451,7 @@ ul.photo_meta {
     height: 50px;
     align-items: center;
 }
+
 img.photo_navigation_suivante {
     width: 81px;
     height: 71px;
@@ -459,13 +460,14 @@ img.photo_navigation_suivante {
     cursor: pointer;
 }
 
-.photo_fleche_gauche{
-    width:26px;
+.photo_fleche_gauche {
+    width: 26px;
     height: 8px;
     background-image: url("/wp-content/themes/nathaliemota_theme/assets/svg/gauche.svg");
 }
-.photo_fleche_droite{
-    width:26px;
+
+.photo_fleche_droite {
+    width: 26px;
     height: 8px;
     background-image: url("/wp-content/themes/nathaliemota_theme/assets/svg/droite.svg");
 }
@@ -517,7 +519,7 @@ img.photo_suggestion_image {
     z-index: -1;
 }
 
-a.photo_block_zoom{
+a.photo_block_zoom {
     background-image: url("/wp-content/themes/nathaliemota_theme/assets/svg/fullscreen.svg");
     background-repeat: no-repeat;
     width: 34px;
@@ -527,7 +529,7 @@ a.photo_block_zoom{
     align-self: flex-end;
 }
 
-.photo_block_oeil{
+.photo_block_oeil {
     background-image: url("/wp-content/themes/nathaliemota_theme/assets/svg/eye.svg");
     background-repeat: no-repeat;
     width: 46px;
@@ -545,15 +547,15 @@ a.photo_block_zoom{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    opacity:0;
+    opacity: 0;
     transition: all 0.3s ease;
 }
 
-.photo_block:hover .photo_block_meta{
+.photo_block:hover .photo_block_meta {
     opacity: 1;
 }
 
-.photo_block_meta_bottom>div{
+.photo_block_meta_bottom > div {
     color: #FFF;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
@@ -600,7 +602,7 @@ span.lb-caption {
     opacity: 1 !important;
 }
 
-.lb-nav a.lb-next:hover{
+.lb-nav a.lb-next:hover {
     background-image: url(/wp-content/themes/nathaliemota_theme/assets/svg/suivant_on.svg) !important;
 }
 
@@ -611,7 +613,7 @@ span.lb-caption {
     opacity: 1 !important;
 }
 
-.lb-nav a.lb-prev:hover{
+.lb-nav a.lb-prev:hover {
     background-image: url(/wp-content/themes/nathaliemota_theme/assets/svg/precedent_on.svg) !important;
 }
 
@@ -631,6 +633,7 @@ header.hero {
     justify-content: center;
     align-items: center;
     display: flex;
+    overflow: hidden;
 
     /* texte */
     -webkit-text-stroke-width: 3px;
@@ -654,16 +657,16 @@ header.hero {
     margin: 0 auto; /* Centre horizontalement la grille sur la page */
     align-items: center; /* Centre verticalement le contenu dans les cellules */
     justify-items: center; /* Centre horizontalement le contenu dans les cellules */
-  }
+}
 
-  #charger_plus {
+#charger_plus {
     display: block; /* Assure que le bouton se comporte comme un bloc */
     margin: 40px auto 0 auto; /* Ajoute un gap de 40px au-dessus du bouton et centre-le horizontalement */
-  }
-  
-  /*Select page d'accueil */
+}
 
-  .filters-container {
+/*Select page d'accueil */
+
+.filters-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -697,15 +700,15 @@ header.hero {
     text-transform: uppercase;
 }
 
-.select2-results__option{
+.select2-results__option {
     color: #313144;
     font-family: "Poppins", sans-serif;
     font-size: 12px;
     line-height: 18px;
-    padding:11px 24px !important;
+    padding: 11px 24px !important;
 }
 
-.select2-selection__rendered{
+.select2-selection__rendered {
     color: #313144;
     font-family: "Poppins", sans-serif;
     font-size: 12px;
@@ -719,9 +722,19 @@ header.hero {
     background-color: #E00000 !important; /* Couleur de fond lors du hover */
     color: #fff !important; /* Couleur du texte lors du hover */
 }
-.select2-results__option--highlighted{
-    background-color: #CCC !important; /* Couleur de fond lors du hover */
+
+.select2-results__option--highlighted {
+    background-color: #FFD6D6 !important; /* Couleur de fond lors du hover */
     color: #313144 !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #313144 !important;
+}
+
+.select2-results__options .select2-results__option:nth-child(1) {
+    color: transparent !important;
+    background-color: #FFF !important;
 }
 
 /* Remplacer la flèche par une image SVG personnalisée */
@@ -761,7 +774,7 @@ h1.entry-title {
     margin-bottom: 20px;
 }
 
-.entry-content p{
+.entry-content p {
     color: #000;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
@@ -773,16 +786,22 @@ h1.entry-title {
 
 @media screen and (max-width: 1148px) {
 
+    header.hero {
+        font-size: 37px;
+        -webkit-text-stroke-width: 2px;
+        height: 480px;
+    }
+
 
     .filters-container {
         flex-direction: column;
         gap: 8px;
     }
+
     .filters-left {
         flex-direction: column;
         gap: 8px;
     }
-
 
 
     .menu-toggle {
@@ -841,7 +860,7 @@ h1.entry-title {
         margin-top: 71px;
     }
 
-    #menu-principal li a,#menu-principal li span {
+    #menu-principal li a, #menu-principal li span {
         color: #FFF;
         text-align: center;
         font-family: "Space Mono", monospace;
@@ -889,17 +908,17 @@ h1.entry-title {
     }
 
     /* Single page photo */
-
     div#wpadminbar {
         display: none;
     }
 
-    .photo_header{
+    .photo_header {
         flex-direction: column-reverse;
         padding: 0 55px;
         border-bottom: 1px solid #000;
         height: auto !important;
     }
+
     .photo_infos {
         border-bottom: none;
     }
@@ -926,9 +945,11 @@ h1.entry-title {
         padding-top: 24px;
         padding-bottom: 24px;
     }
+
     ul.photo_suggestion_liste {
         grid-template-columns: 1fr;
     }
+
     aside.photo_suggestion {
         padding: 0 25px;
     }
@@ -936,21 +957,30 @@ h1.entry-title {
     footer.site-footer {
         margin: 24px auto 0;
     }
+
     .lb-closeContainer {
         top: -40px;
     }
 
-/* Galerie page d'accueil */
+    /* Galerie page d'accueil */
     #photos {
-      grid-template-columns: 1fr; /* 1 colonne sur les petits écrans */
-      width: 320px; /* Fixe la largeur de la galerie à 320 pixels */
-      margin: 0 auto; /* Centre la galerie horizontalement */
+        grid-template-columns: 1fr; /* 1 colonne sur les petits écrans */
+        width: 320px; /* Fixe la largeur de la galerie à 320 pixels */
+        margin: 0 auto; /* Centre la galerie horizontalement */
     }
-  
+
     .photo_block {
         height: 280px;
         width: 317px;
-}
+    }
 }
 
+@media screen and (max-width: 425px) {
+
+    header.hero {
+        font-size: 27px;
+        -webkit-text-stroke-width: 1px;
+        height: 250px;
+    }
+}
 

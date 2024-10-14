@@ -10,7 +10,7 @@
                 <div class="filters-container">
                     <div class="filters-left">
                         <select id="category">
-                            <option value="">Catégories</option>
+                            <option value="">Catégorie</option>
                             <?php
                             $categories = get_terms(array(
                                 'taxonomy' => 'categorie', // Utilisation de ta clé de taxonomie
