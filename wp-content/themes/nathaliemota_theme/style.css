@@ -352,6 +352,15 @@ footer.site-footer {
     font-weight: bold;
 }
 
+h2.wp-block-heading {
+    color: black;
+    font-family: 'Space Mono';
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /*Single page*/
 
 div#primary {
