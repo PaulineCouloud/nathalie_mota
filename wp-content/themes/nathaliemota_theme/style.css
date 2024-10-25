@@ -14,139 +14,38 @@ Text Domain: nathalie_mota
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*
-.space-mono-regular {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
+
+/*General*/
+
+.btn_nm {
+    display: flex;
+    min-width: 272px;
+    height: 50px;
+    padding: 8px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+    font-family: "Space Mono", monospace;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.space-mono-bold {
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  font-style: normal;
+.btn_nm:hover {
+    background-color: #000;
+    color: #FFF;
+    font-weight: bold;
 }
 
-.space-mono-regular-italic {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-  font-style: italic;
+h2.wp-block-heading {
+    color: black;
+    font-family: 'Space Mono';
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
-.space-mono-bold-italic {
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-*/
 
 /*Menu Header*/
 
@@ -255,6 +154,16 @@ footer.site-footer {
     height: 769px;
     border: 5px solid #000;
     background-color: #FFF;
+    animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 
@@ -328,37 +237,6 @@ footer.site-footer {
     gap: 4px;
 }
 
-/*General*/
-
-.btn_nm {
-    display: flex;
-    min-width: 272px;
-    height: 50px;
-    padding: 8px 15px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: #000;
-    font-family: "Space Mono", monospace;
-    font-size: 12px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.btn_nm:hover {
-    background-color: #000;
-    color: #FFF;
-    font-weight: bold;
-}
-
-h2.wp-block-heading {
-    color: black;
-    font-family: 'Space Mono';
-    font-size: 25px;
-    text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
 /*Single page*/
 
@@ -504,6 +382,7 @@ ul.photo_suggestion_liste {
 }
 
 /*Photo block*/
+
 .photo_block {
     height: 495px;
     display: flex;
@@ -625,6 +504,19 @@ div#home {
     width: 100%;
 }
 
+/*Image*/
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 header.hero {
     height: 962px;
     background-repeat: no-repeat;
@@ -644,24 +536,30 @@ header.hero {
     font-weight: 700;
     text-transform: uppercase;
     color: transparent;
+
+    /* animation */
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.5s;
 }
+
 
 /* Galerie page d'accueil */
 
 #photos {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 colonnes de taille égale */
+    grid-template-columns: 1fr 1fr; 
     gap: 10px;
-    max-width: 1148px; /* Limite la largeur maximale de la grille */
-    width: 100%; /* Assure que la grille prend toute la largeur possible */
-    margin: 0 auto; /* Centre horizontalement la grille sur la page */
-    align-items: center; /* Centre verticalement le contenu dans les cellules */
-    justify-items: center; /* Centre horizontalement le contenu dans les cellules */
+    max-width: 1148px; 
+    width: 100%;
+    margin: 0 auto; 
+    align-items: center; 
+    justify-items: center; 
 }
 
 #charger_plus {
     display: block; /* Assure que le bouton se comporte comme un bloc */
-    margin: 40px auto 0 auto; /* Ajoute un gap de 40px au-dessus du bouton et centre-le horizontalement */
+    margin: 40px auto 0 auto; 
 }
 
 /*Select page d'accueil */
@@ -677,7 +575,7 @@ header.hero {
 
 .filters-left {
     display: flex;
-    gap: 40px; /* Espace entre les selects à gauche */
+    gap: 40px; 
 }
 
 .filters-right {
@@ -783,6 +681,7 @@ h1.entry-title {
     line-height: normal;
 }
 
+/*Responsive*/
 
 @media screen and (max-width: 1148px) {
 
@@ -972,6 +871,17 @@ h1.entry-title {
     .photo_block {
         height: 280px;
         width: 317px;
+    }
+
+    /*Navigation Lightbox*/
+    .lb-nav {
+        display: none !important;
+    }
+
+}
+@media screen and (max-width: 782px) {
+    html {
+        margin-top: 71px !important;
     }
 }
 

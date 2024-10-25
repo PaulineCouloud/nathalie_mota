@@ -1,10 +1,12 @@
 <?php get_header(); ?>
-
+<!-- Hero Header -->
 <div id="home" class="content-area">
     <main id="main" class="site-main">
         <header class="hero" style="background-image: url('<?php echo get_random_photo(); ?>')">
             Photographe Event
         </header>
+<!-- Filtres -->
+
         <section>
             <header>
                 <div class="filters-container">
@@ -45,8 +47,9 @@
                         </select>
                     </div>
                 </div>
-
             </header>
+<!-- Photos -->
+
             <main>
                 <div id="photos">
                     <?php
@@ -67,6 +70,7 @@
                     ?>
                 </div>
             </main>
+            <!-- Bouton charger plus -->
             <footer>
                 <button class="btn_nm" id="charger_plus" <?php if (!$has_more) echo 'style="display:none;"'; ?>>Charger
                     plus

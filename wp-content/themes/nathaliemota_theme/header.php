@@ -15,14 +15,17 @@
     <nav class="site-nav">
         <?php
         wp_nav_menu(array(
-            'menu' => 'Principal',
-            'container' => false,
-            'menu_class' => 'menu',
+            'menu' => 'Principal', // Nom du menu à afficher
+            'container' => false, // Ne pas utiliser de conteneur HTML autour du menu
+            'menu_class' => 'menu', // Classe CSS du menu
         ));
         ?>
     </nav>
     <div class="menu-toggle">
+        <!-- Bouton pour ouvrir/fermer le menu en version mobile -->
         <div class="hamburger"></div>
+        <!-- Icône hamburger pour ouvrir le menu -->
         <div class="croix"></div>
+        <!-- Icône croix pour fermer le menu -->
     </div>
 </header>

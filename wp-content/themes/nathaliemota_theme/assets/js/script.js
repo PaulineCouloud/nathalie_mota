@@ -54,7 +54,7 @@ function contact_form(){
             modal.classList.toggle('active');
         });
     }
-    //quand on clique sur le background et pas sur la fenetre interne .modal_contact on ferme la modale
+    //quand on clique dans le background on ferme la modale
     background.addEventListener('click', function(event) {
         if (event.target === background) {
             modal.classList.toggle('active');

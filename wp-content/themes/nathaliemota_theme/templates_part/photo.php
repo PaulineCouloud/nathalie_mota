@@ -1,5 +1,4 @@
 <div class="photo_block">
-
     <div class="photo_block_meta">
         <a href="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" data-lightbox="galerie"
            class="photo_block_zoom" data-title="<div class='lightbox_titre'><?php echo get_the_title(get_the_ID()); ?></div><div class='lightbox_categorie'><?php echo strip_tags(get_the_term_list(get_the_ID(), 'categorie', '', ', ')); ?></div>"></a>
