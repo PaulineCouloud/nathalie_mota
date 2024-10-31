@@ -26,6 +26,8 @@
                             }
                             ?>
                         </select>
+                        <div class="myModal">
+                        </div>
                         <select id="formats">
                             <option value="">Formats</option>
                             <?php

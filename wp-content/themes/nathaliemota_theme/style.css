@@ -875,14 +875,14 @@ h1.entry-title {
 
     /*Navigation Lightbox*/
     .lb-nav {
-        display: none !important;
+        opacity: 0 !important;
     }
 
 }
 @media screen and (max-width: 782px) {
-    html {
+    /*html {
         margin-top: 71px !important;
-    }
+    }*/
 }
 
 @media screen and (max-width: 425px) {
